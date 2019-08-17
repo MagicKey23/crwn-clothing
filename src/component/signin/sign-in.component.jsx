@@ -15,7 +15,7 @@ class SignIn extends React.Component                                            
         event.preventDefault();
         const {email, password} = this.state;
         try {
-            await auth.signInWithEmailAndPassword(email,password);
+            auth.signInWithEmailAndPassword(email,password);
             this.setState({email:'',password:''})
         }catch(error){
             console.log(error);
@@ -33,6 +33,7 @@ class SignIn extends React.Component                                            
                 <span>Sign in with your email and password</span>
                 <form onSubmit= {this.handleSubmit}>
                     <FormInput handleChange={this.handleChange} name='email' value={this.state.email} label ='email'required/>
+                    
                     <FormInput
                     handleChange={this.handleChange}
                     name='password' 
