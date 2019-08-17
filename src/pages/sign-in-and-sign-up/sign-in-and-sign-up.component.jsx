@@ -1,6 +1,6 @@
 import React from 'react';
-import SignIn from '../../component/signin/sign-in.component'
-import SignUp from '../../component/sign-up/signup.component'
+import SignIn from '../../components/signin/sign-in.component'
+import SignUp from '../../components/sign-up/signup.component'
 import './sign-in-and-sign-up.styles.scss';
 
 const SignInAndSignUpPage = () =>(
